@@ -169,6 +169,18 @@ All pages must export `metadata: Metadata` with:
 
 ---
 
+## Verification
+
+After making changes, verify with:
+```bash
+npx tsc --noEmit    # TypeScript type check
+pnpm lint           # ESLint
+```
+
+**Do NOT use `pnpm build` for verification.**
+
+---
+
 ## Reference
 
 - Full technical plan: `PLAN.md`
