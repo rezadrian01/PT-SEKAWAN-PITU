@@ -6,7 +6,7 @@ import { WhatsAppCTA } from "./components/WhatsAppCTA";
 export const metadata: Metadata = {
   title: "FAQ | PT. Sekawan Pitu",
   description:
-    "Jawaban untuk pertanyaan umum tentang pemesanan, pengiriman, harga, dan kunjungan ke kandnag PT. Sekawan Pitu.",
+    "Jawaban untuk pertanyaan umum tentang pemesanan, pengiriman, harga, dan kunjungan ke kandang PT. Sekawan Pitu.",
   robots: { index: true, follow: true },
 };
 

@@ -6,7 +6,7 @@ import { SocialCTA } from "./components/SocialCTA";
 export const metadata: Metadata = {
   title: "Galeri | PT. Sekawan Pitu",
   description:
-    "Lihat langsung kondisi kandnag, hewan ternak, dan proses produksi PT. Sekawan Pitu di Sukabumi.",
+    "Lihat langsung kondisi kandang, hewan ternak, dan proses produksi PT. Sekawan Pitu di Sukabumi.",
   robots: { index: true, follow: true },
 };
 

@@ -4,11 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useScroll, useMotionValueEvent } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
 } from "@/components/ui/sheet";
 import { COMPANY } from "@/lib/constants";
 
@@ -34,11 +35,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-cream/90 border-b border-surface backdrop-blur-md shadow-sm"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
@@ -58,11 +58,10 @@ export function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`px-3 py-2 text-sm font-medium font-[family-name:var(--font-dm-sans)] rounded-md transition-colors ${
-                    isActive
+                  className={`px-3 py-2 text-sm font-medium font-[family-name:var(--font-dm-sans)] rounded-md transition-colors ${isActive
                       ? "text-amber"
                       : "text-warm-black/70 hover:text-warm-black"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -92,19 +91,8 @@ export function Navbar() {
             </button>
           </SheetTrigger>
           <SheetContent side="right" className="w-72 bg-cream p-0 flex flex-col">
-            <div className="flex items-center justify-between border-b border-surface px-6 py-5">
-              <span className="font-[family-name:var(--font-playfair)] text-lg font-bold text-forest">
-                {COMPANY.name}
-              </span>
-              <button
-                aria-label="Tutup menu"
-                onClick={() => setOpen(false)}
-                className="p-1 text-warm-black/70 hover:text-warm-black"
-              >
-                <X size={20} />
-              </button>
-            </div>
-            <ul className="flex flex-col p-6 gap-1">
+            <SheetTitle className="sr-only">Menu Navigasi</SheetTitle>
+            <ul className="flex flex-col p-6 pt-12 gap-1">
               {NAV_LINKS.map((link) => {
                 const isActive =
                   link.href === "/"
@@ -115,11 +103,10 @@ export function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className={`block px-3 py-3 text-sm font-medium font-[family-name:var(--font-dm-sans)] rounded-md transition-colors ${
-                        isActive
+                      className={`block px-3 py-3 text-sm font-medium font-[family-name:var(--font-dm-sans)] rounded-md transition-colors ${isActive
                           ? "text-amber bg-amber/10"
                           : "text-warm-black/70 hover:text-warm-black hover:bg-surface"
-                      }`}
+                        }`}
                     >
                       {link.label}
                     </Link>

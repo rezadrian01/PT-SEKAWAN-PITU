@@ -7,7 +7,7 @@ import { WA_BASE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Kontak | PT. Sekawan Pitu",
   description:
-    "Hubungi PT. Sekawan Pitu untuk pemesanan, kunjungan kandnag, atau pertanyaan tentang produk peternakan kami.",
+    "Hubungi PT. Sekawan Pitu untuk pemesanan, kunjungan kandang, atau pertanyaan tentang produk peternakan kami.",
   robots: { index: true, follow: true },
 };
 

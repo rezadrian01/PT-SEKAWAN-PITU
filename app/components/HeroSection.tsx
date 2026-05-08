@@ -23,7 +23,7 @@ const TRUST_BADGES = [
   {
     icon: ShieldCheck,
     title: "Tanpa Pengawet",
-    description: "Produk segar langsung dari kandnag, tanpa bahan kimia.",
+    description: "Produk segar langsung dari kandang, tanpa bahan kimia.",
   },
   {
     icon: Truck,
@@ -57,7 +57,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero content — two column layout */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-32 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:py-32 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
           {/* Left: Text content */}
           <motion.div
@@ -100,7 +100,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="mb-10 font-[family-name:var(--font-dm-sans)] font-light text-lg sm:text-xl text-white/80 leading-relaxed max-w-xl"
             >
-              Telur, daging, dan susu segar langsung dari kandnag kami di
+              Telur, daging, dan susu segar langsung dari kandang kami di
               Sukabumi. Tanpa pengawet, tanpa hormon — hanya protein hewani
               berkualitas untuk keluarga Anda.
             </motion.p>
@@ -129,7 +129,7 @@ export function HeroSection() {
             </motion.div>
 
             {/* Stats */}
-            <motion.div
+            {/* <motion.div
               variants={{
                 hidden: { opacity: 0, y: 24 },
                 visible: { opacity: 1, y: 0 },
@@ -150,7 +150,7 @@ export function HeroSection() {
                   </span>
                 </div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right: Trust badges panel */}

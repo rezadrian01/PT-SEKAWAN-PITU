@@ -7,7 +7,7 @@ import { MobileStickyBar } from "./components/MobileStickyBar";
 export const metadata: Metadata = {
   title: "Belanja Telur, Daging & Susu Segar | PT. Sekawan Pitu",
   description:
-    "Pesan telur, daging, dan susu segar langsung via WhatsApp. Pengiriman dari kandnag di Sukabumi, Jawa Barat. Fresen tanpa pengawet.",
+    "Pesan telur, daging, dan susu segar langsung via WhatsApp. Pengiriman dari kandang di Sukabumi, Jawa Barat. Fresen tanpa pengawet.",
   robots: { index: true, follow: true },
 };
 
@@ -20,7 +20,7 @@ export default function BelanjaPage() {
           <SectionHeader
             label="Belanja"
             title="Belanja Aman, Nyaman, dan Terpercaya"
-            subtitle="Telur, daging, dan susu segar langsung dari kandnag. Pesan via WhatsApp, terima di hari yang sama."
+            subtitle="Telur, daging, dan susu segar langsung dari kandang. Pesan via WhatsApp, terima di hari yang sama."
             className="mb-6"
           />
         </div>
@@ -37,7 +37,7 @@ export default function BelanjaPage() {
       </section>
 
       {/* Mobile sticky bar */}
-      <MobileStickyBar />
+      {/* <MobileStickyBar /> */}
     </>
   );
 }
