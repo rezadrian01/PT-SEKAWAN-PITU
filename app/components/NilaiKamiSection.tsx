@@ -16,13 +16,13 @@ const VALUES = [
     icon: ShieldCheck,
     title: "Kualitas Terjamin",
     description:
-      "Setiap produk melewati Quality Control ketat sebelum dikirim. Telur dipanen hari yang sama, daging segar langsung dari kandnag.",
+      "Setiap produk melewati Quality Control ketat sebelum dikirim. Telur dipanen hari yang sama, daging segar langsung dari kandang.",
   },
   {
     icon: Truck,
     title: "Pengiriman Cepat",
     description:
-      "Rantai dingin terjaga dari kandnag hingga ke rumah Anda. Pengiriman ke Sukabumi dan sekitarnya bisa same-day.",
+      "Rantai dingin terjaga dari kandang hingga ke rumah Anda. Pengiriman ke Sukabumi dan sekitarnya bisa same-day.",
   },
 ];
 
@@ -33,7 +33,7 @@ export function NilaiKamiSection() {
         <SectionHeader
           label="Nilai Kami"
           title="Mengapa Memilih PT. Sekawan Pitu?"
-          subtitle="Kami berkomitmen menghadirkan protein hewani terbaik dari kandnag sehat untuk meja makan Anda."
+          subtitle="Kami berkomitmen menghadirkan protein hewani terbaik dari kandang sehat untuk meja makan Anda."
           className="mb-16"
         />
 

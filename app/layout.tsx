@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | PT. Sekawan Pitu",
   },
   description:
-    "Dari Kandang Sehat, Untuk Keluarga Kuat. Telur, daging, dan susu segar langsung dari kandnag sehat di Sukabumi, Jawa Barat.",
+    "Dari Kandang Sehat, Untuk Keluarga Kuat. Telur, daging, dan susu segar langsung dari kandang sehat di Sukabumi, Jawa Barat.",
   openGraph: {
     siteName: "PT. Sekawan Pitu",
     locale: "id_ID",

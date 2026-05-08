@@ -33,7 +33,7 @@ export function TentangBanner() {
           PT. Sekawan Pitu
         </h1>
         <p className="mt-4 font-[family-name:var(--font-dm-sans)] font-light text-white/75 text-lg max-w-xl mx-auto leading-relaxed">
-          Dari kandnag sehat di Sukabumi, kami membangun masa depan peternakan
+          Dari kandang sehat di Sukabumi, kami membangun masa depan peternakan
           Indonesia yang berkelanjutan.
         </p>
       </motion.div>

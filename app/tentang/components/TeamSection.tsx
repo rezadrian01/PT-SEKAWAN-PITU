@@ -16,7 +16,7 @@ const TEAM = [
     icon: ShieldCheck,
     role: "Kepala Kandang",
     description:
-      "Memastikan setiap kandnag beroperasi sesuai standar hygiene dan kesejahteraan hewan tertinggi.",
+      "Memastikan setiap kandang beroperasi sesuai standar hygiene dan kesejahteraan hewan tertinggi.",
   },
   {
     icon: ClipboardCheck,
@@ -28,7 +28,7 @@ const TEAM = [
     icon: Truck,
     role: "Kepala Logistik",
     description:
-      "Mengelola rantai dingin dari kandnag hingga pengiriman, memastikan produk sampai segar dan tepat waktu.",
+      "Mengelola rantai dingin dari kandang hingga pengiriman, memastikan produk sampai segar dan tepat waktu.",
   },
 ];
 

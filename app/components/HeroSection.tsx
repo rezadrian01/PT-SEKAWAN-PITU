@@ -82,7 +82,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="mb-10 font-[family-name:var(--font-dm-sans)] font-light text-lg sm:text-xl text-white/80 leading-relaxed max-w-xl"
           >
-            Telur, daging, dan susu segar langsung dari kandnag kami di
+            Telur, daging, dan susu segar langsung dari kandang kami di
             Sukabumi. Tanpa pengawet, tanpa hormon — hanya protein hewani
             berkualitas untuk keluarga Anda.
           </motion.p>

@@ -21,14 +21,14 @@ export function CompanyStorySection() {
           >
             <SectionHeader
               label="Cerita Kami"
-              title="Berawal dari Kandnag Kecil di Sukabumi"
-              subtitle="PT. Sekawan Pitu didirikan pada tahun 2026 dengan satu misi: menghadirkan protein hewani segar dan sehat langsung dari kandnag ke meja makan keluarga Indonesia."
+              title="Berawal dari Kandang Kecil di Sukabumi"
+              subtitle="PT. Sekawan Pitu didirikan pada tahun 2026 dengan satu misi: menghadirkan protein hewani segar dan sehat langsung dari kandang ke meja makan keluarga Indonesia."
               className="mb-8"
             />
             <div className="space-y-5">
               {[
                 "Bermula dari kepedulian terhadap kualitas pangan, pendiri kami melihat kesempatan besar untuk menghubungkan peternak lokal dengan keluarga yang membutuhkan produk segar.",
-                "Kami membangun sistem peternakan yang mengutamakan kesejahteraan hewan, hygiene kandnag, dan rantai pasok yang efisien.",
+                "Kami membangun sistem peternakan yang mengutamakan kesejahteraan hewan, hygiene kandang, dan rantai pasok yang efisien.",
                 "Hari ini, PT. Sekawan Pitu melayani ratusan keluarga di Jawa Barat dengan telur, daging, dan susu segar berkualitas.",
               ].map((paragraph, i) => (
                 <p
