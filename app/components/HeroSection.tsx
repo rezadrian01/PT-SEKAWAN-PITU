@@ -5,8 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, ShieldCheck, Truck } from "lucide-react";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1540339832862-474599807836?w=1920&q=80";
+const HERO_IMAGE = "https://images.unsplash.com/photo-1569858241634-5aee6e47091a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+// "https://images.unsplash.com/photo-1540339832862-474599807836?w=1920&q=80";
 
 const STATS = [
   { value: "2026", label: "Berdiri" },
@@ -58,7 +58,7 @@ export function HeroSection() {
 
       {/* Hero content — two column layout */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-32 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
           {/* Left: Text content */}
           <motion.div
             initial="hidden"
@@ -66,6 +66,7 @@ export function HeroSection() {
             variants={{
               visible: { transition: { staggerChildren: 0.12 } },
             }}
+            className="lg:col-span-2"
           >
             <motion.span
               variants={{
@@ -157,7 +158,7 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 32 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            className="hidden lg:flex flex-col gap-5"
+            className="hidden lg:flex flex-col gap-5 lg:col-span-1"
           >
             <p className="text-xs font-medium tracking-[0.15em] uppercase text-dark-amber font-[family-name:var(--font-dm-sans)]">
               Mengapa Memilih Kami
