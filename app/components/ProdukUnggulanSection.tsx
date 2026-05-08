@@ -16,7 +16,9 @@ export function ProdukUnggulanSection() {
             label="Produk Kami"
             title="Langsung dari Kandang"
             subtitle="Segar, tanpa pengawet, dikirim langsung ke rumah Anda."
-            className="text-white [&_.text-amber]:!text-dark-amber"
+            titleClassName="text-white"
+            subtitleClassName="!text-white/60"
+            className="text-white"
           />
           <Link
             href="/belanja"
