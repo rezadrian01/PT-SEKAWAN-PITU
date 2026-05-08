@@ -33,7 +33,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     id: "faq-005",
     question: "Apakah bisa datang langsung ke kandang untuk membeli atau melihat?",
     answer:
-      "Tentu bisa! Kami menyambut kunjungan ke fasilitas kami di Jl. Sarasa No. 45 Babakan, Kec. Cibeureum, Kota Sukabumi. Kandang buka Senin–Sabtu pukul 07.00–17.00 WIB. Silakan hubungi kami via WhatsApp minimal 1 hari sebelumnya untuk menjadwalkan kunjungan.",
+      "Tentu bisa! Kami menyambut kunjungan ke fasilitas kami di Jl. Sarasa No. 45 Babakan, Kec. Cibeureum, Kota Sukabumi. Kandang buka Senin-Sabtu pukul 07.00-17.00 WIB. Silakan hubungi kami via WhatsApp minimal 1 hari sebelumnya untuk menjadwalkan kunjungan.",
   },
   {
     id: "faq-006",
