@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | PT. Sekawan Pitu",
   },
   description:
-    "Dari Kandang Sehat, Untuk Keluarga Kuat. Telur, daging, dan susu segar langsung dari kandang sehat di Sukabumi, Jawa Barat.",
+    "Dari Kandang Sehat, Untuk Keluarga Kuat. Telur, daging, dan susu segar langsung dari kandnag sehat di Sukabumi, Jawa Barat.",
   openGraph: {
     siteName: "PT. Sekawan Pitu",
     locale: "id_ID",
@@ -40,7 +43,10 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="min-h-full flex flex-col font-sans antialiased">
-        {children}
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <WhatsAppFloat />
       </body>
     </html>
   );
