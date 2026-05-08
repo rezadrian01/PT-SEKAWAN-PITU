@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { PRODUCTS } from "@/lib/data/products";
+import { ArrowRight, Leaf, ShieldCheck, Truck } from "lucide-react";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1540339832862-474599807836?w=1920&q=80";
@@ -13,6 +12,24 @@ const STATS = [
   { value: "2026", label: "Berdiri" },
   { value: "8+", label: "Produk Segar" },
   { value: "32+", label: "Pelanggan Puas" },
+];
+
+const TRUST_BADGES = [
+  {
+    icon: Leaf,
+    title: "Free-Range",
+    description: "Ayam dan hewan ternak dipelihara secara bebas, tanpa hormon.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Tanpa Pengawet",
+    description: "Produk segar langsung dari kandnag, tanpa bahan kimia.",
+  },
+  {
+    icon: Truck,
+    title: "Same-Day Delivery",
+    description: "Pesanan di hari yang sama untuk area Sukabumi dan sekitarnya.",
+  },
 ];
 
 export function HeroSection() {
@@ -135,58 +152,49 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Product preview cards */}
+          {/* Right: Trust badges panel */}
           <motion.div
             initial={{ opacity: 0, x: 32 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            className="hidden lg:flex flex-col gap-4"
+            className="hidden lg:flex flex-col gap-5"
           >
-            <p className="text-xs font-medium tracking-[0.15em] uppercase text-dark-amber font-[family-name:var(--font-dm-sans)] mb-2">
-              Produk Unggulan
+            <p className="text-xs font-medium tracking-[0.15em] uppercase text-dark-amber font-[family-name:var(--font-dm-sans)]">
+              Mengapa Memilih Kami
             </p>
+
             <div className="flex flex-col gap-4">
-              {PRODUCTS.slice(0, 3).map((product) => (
-                <div
-                  key={product.id}
-                  className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 hover:bg-white/15 transition-colors group"
+              {TRUST_BADGES.map((badge, i) => (
+                <motion.div
+                  key={badge.title}
+                  initial={{ opacity: 0, x: 16 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.4 + i * 0.1 }}
+                  className="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 hover:bg-white/15 transition-colors"
                 >
-                  <div className="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden">
-                    <Image
-                      src={product.imageUrl}
-                      alt={product.imageAlt}
-                      fill
-                      className="object-cover"
-                      sizes="64px"
-                    />
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-dark-amber/20 border border-dark-amber/30">
+                    <badge.icon size={20} className="text-dark-amber" aria-hidden="true" />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-[family-name:var(--font-playfair)] text-sm font-bold text-white leading-tight truncate">
-                      {product.name}
+                  <div>
+                    <p className="font-[family-name:var(--font-playfair)] text-base font-bold text-white leading-tight">
+                      {badge.title}
                     </p>
-                    <p className="font-[family-name:var(--font-dm-sans)] text-xs text-white/60 mt-0.5">
-                      {product.unit}
+                    <p className="font-[family-name:var(--font-dm-sans)] font-light text-white/60 text-sm leading-relaxed mt-1">
+                      {badge.description}
                     </p>
                   </div>
-                  <a
-                    href={`https://wa.me/6285720887079?text=Halo%20PT.%20Sekawan%20Pitu%2C%20saya%20ingin%20memesan%20${encodeURIComponent(product.name)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Pesan ${product.name} via WhatsApp`}
-                    className="shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-amber text-white text-sm font-semibold hover:bg-amber/90 transition-colors"
-                  >
-                    <ArrowRight size={14} aria-hidden="true" />
-                  </a>
-                </div>
+                </motion.div>
               ))}
             </div>
-            <Link
-              href="/belanja"
-              className="mt-2 flex items-center justify-center gap-2 py-3 border border-white/30 text-white/80 text-sm font-[family-name:var(--font-dm-sans)] font-medium hover:border-white/60 hover:text-white transition-colors rounded-xl"
-            >
-              Lihat semua produk
-              <ArrowRight size={14} aria-hidden="true" />
-            </Link>
+
+            {/* Divider with label */}
+            <div className="flex items-center gap-3 mt-2">
+              <div className="h-px flex-1 bg-white/20" />
+              <span className="text-xs text-white/40 font-[family-name:var(--font-dm-sans)]">
+                2026 · Sukabumi, Jawa Barat
+              </span>
+              <div className="h-px flex-1 bg-white/20" />
+            </div>
           </motion.div>
         </div>
       </div>
