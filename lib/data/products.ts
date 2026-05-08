@@ -42,7 +42,7 @@ export const PRODUCTS: Product[] = [
     category: "Daging",
     description: "Daging sapi pilihan, tekstur empuk dan juicy, tanpa tambahan hormon. Berasal dari sapi lokal yang dipelihara dengan standar kesehatan tinggi.",
     unit: "per kg",
-    imageUrl: "https://images.unsplash.com/photo-1603048297172-c92544798d5e?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1606677661991-446cea8ee182?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageAlt: "Daging sapi segar tanpa tulang di atas piring",
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
     category: "Daging",
     description: "Daging ayam tanpa tulang, tekstur lembut dan segar, kaya protein. Langsung dari peternakan untuk menjamin kualitas dan kesegaran.",
     unit: "per kg",
-    imageUrl: "https://images.unsplash.com/photo-1604503468506-a8da13d50791?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageAlt: "Daging ayam segar tanpa kulit di atas piring",
   },
   {
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
     category: "Daging",
     description: "Daging kambing dan domba kaya protein, rendah lemak, tanpa hormon. Pilihan daging sehat untuk keluarga.",
     unit: "per kg",
-    imageUrl: "https://images.unsplash.com/photo-1604503468506-a8da13d50791?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1695683948382-868cd8d516fe?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageAlt: "Daging kambing segar dengan tekstur tanpa lemak",
   },
   {
@@ -78,7 +78,7 @@ export const PRODUCTS: Product[] = [
     category: "Susu",
     description: "Susu kambing murni kaya nutrisi, mudah dicerna, tanpa tambahan bahan kimia. Langsung dari peternakan lokal untuk kesegaran terbaik.",
     unit: "per liter",
-    imageUrl: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1639151082235-406d8eb262b9?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageAlt: "Botol susu kambing murni dalam wadah kayu",
   },
 ];

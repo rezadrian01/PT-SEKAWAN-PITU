@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const GALLERY_ITEMS = [
   {
-    src: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1773415961612-4aae00457cd8?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Area utama peternakan PT. Sekawan Pitu",
     caption: "Area Utama Kandang",
   },
@@ -15,12 +15,12 @@ const GALLERY_ITEMS = [
     caption: "Kandang Ayam Kampung",
   },
   {
-    src: "https://images.unsplash.com/photo-1604503468506-a8da13d50791?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1477506410535-f12fe9af97cc?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Proses panen telur segar",
     caption: "Proses Panen Telur",
   },
   {
-    src: "https://images.unsplash.com/photo-1540339832862-474599807836?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1573731281021-d1cc573b3310?q=80&w=2833&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Peternakan sapi dan kambing di Sukabumi",
     caption: "Peternakan Sapi & Kambing",
   },
@@ -35,7 +35,7 @@ const GALLERY_ITEMS = [
     caption: "Proses Pemerahan Susu",
   },
   {
-    src: "https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1528458538087-f58e9ad895da?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Packing dan pengiriman produk segar",
     caption: "Packing & Pengiriman",
   },
